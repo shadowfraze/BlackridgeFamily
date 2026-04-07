@@ -201,7 +201,10 @@ h1 {
   }
   .nav-links { gap: 14px; }
   main { padding: 20px 16px 56px; }
-  .home-mark { width: 84vw; max-width: 300px; }
+  .home-mark {
+  width: min(260px, 62vw);
+  margin-bottom: 18px;
+}
   .paper { padding: 42px 22px 48px; }
   .paper-top-mark { width: 60vw; max-width: 220px; }
   .mark-page-mark { width: 76vw; max-width: 280px; }
