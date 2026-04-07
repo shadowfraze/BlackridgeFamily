@@ -40,8 +40,19 @@ a:hover { color: var(--accent); }
 .brand { letter-spacing: .14em; font-size: .9rem; color: var(--accent); }
 .brand a { color: var(--accent); }
 .nav-links { display: flex; gap: 20px; flex-wrap: wrap; font-size: .95rem; }
-
 main { max-width: 1040px; margin: 0 auto; padding: 32px 24px 80px; }
+
+/* Shared mark sizing */
+.site-mark {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+}
+.home-mark { width: min(520px, 84vw); margin-bottom: 8px; }
+.paper-top-mark { width: min(300px, 70vw); margin-top: 6px; margin-bottom: 10px; }
+.mark-page-mark { width: min(420px, 76vw); margin-top: 6px; margin-bottom: 14px; }
+.small-mark { width: min(240px, 62vw); }
 
 /* Home */
 .luxury-home { background: linear-gradient(180deg, #0f0f10 0%, #121214 100%); }
@@ -53,14 +64,8 @@ main { max-width: 1040px; margin: 0 auto; padding: 32px 24px 80px; }
   border-bottom: 1px solid var(--line);
   padding: 52px 0 72px;
 }
-.hero-symbol {
-  color: var(--accent);
-  font-size: 3rem;
-  line-height: 1;
-  margin-bottom: 18px;
-}
 .hero-kicker {
-  margin: 0;
+  margin: 10px 0 0;
   color: var(--muted);
   letter-spacing: .22em;
   font-size: .85rem;
@@ -147,13 +152,6 @@ h1 {
   inset: 14px;
   border: 1px solid rgba(27,27,27,.22);
   pointer-events: none;
-}
-.paper-mark {
-  font-size: 3.2rem;
-  line-height: 1;
-  margin-top: 8px;
-  margin-bottom: 18px;
-  color: #1b1b1b;
 }
 .paper-eyebrow {
   margin: 0;
