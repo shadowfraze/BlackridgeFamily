@@ -1,0 +1,68 @@
+:root {
+  --bg: #0f0f10;
+  --panel: #171719;
+  --text: #e9e3d5;
+  --muted: #b7ae9a;
+  --line: #353536;
+  --accent: #d1b06b;
+}
+* { box-sizing: border-box; }
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.6;
+}
+a { color: var(--text); text-decoration: none; }
+a:hover { color: var(--accent); }
+.site-header {
+  border-bottom: 1px solid var(--line);
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(8px);
+  background: rgba(15,15,16,.9);
+}
+.nav {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 18px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.brand { letter-spacing: .14em; font-size: .9rem; color: var(--accent); }
+.nav-links { display: flex; gap: 20px; flex-wrap: wrap; font-size: .95rem; }
+main { max-width: 960px; margin: 0 auto; padding: 32px 24px 80px; }
+.hero {
+  min-height: 70vh;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  border-bottom: 1px solid var(--line);
+  padding: 48px 0 64px;
+}
+.hero-mark {
+  color: var(--accent);
+  opacity: .9;
+  font-size: 1.1rem;
+  letter-spacing: .18em;
+  margin-bottom: 18px;
+  white-space: pre-line;
+}
+.eyebrow { margin: 0; color: var(--muted); letter-spacing: .24em; font-size: .85rem; }
+h1 { margin: 12px 0 10px; font-size: clamp(3rem, 9vw, 6rem); line-height: 1; letter-spacing: .05em; font-weight: 600; }
+.subhead { margin: 0; color: var(--muted); font-size: 1.1rem; }
+.motto { margin-top: 18px; letter-spacing: .18em; font-size: .95rem; color: var(--accent); }
+.panel { padding: 52px 0; border-bottom: 1px solid var(--line); }
+h2 { margin: 0 0 16px; font-size: 1.8rem; font-weight: 600; }
+.clean-list { list-style: none; padding: 0; margin: 0; }
+.clean-list li { padding: 10px 0; border-bottom: 1px solid rgba(255,255,255,.06); }
+.founder-name { font-size: 1.2rem; color: var(--accent); }
+.site-footer { padding: 28px 24px 48px; text-align: center; color: var(--muted); }
+@media (max-width: 700px) {
+  .nav { align-items: flex-start; flex-direction: column; }
+  .nav-links { gap: 14px; }
+}
