@@ -86,7 +86,6 @@ main {
   padding: 32px 24px 80px;
 }
 
-/* Shared mark */
 .site-mark {
   display: block;
   margin-left: auto;
@@ -122,11 +121,11 @@ main {
   margin-bottom: 22px;
   animation-delay: 0.05s;
 }
-.hero-kicker { animation-delay: 0.18s; }
-.home-hero h1 { animation-delay: 0.30s; }
-.hero-sub { animation-delay: 0.42s; }
-.hero-motto { animation-delay: 0.54s; }
-.hero-actions { animation-delay: 0.66s; }
+.hero-kicker { animation-delay: 0.30s; }
+.home-hero h1 { animation-delay: 0.42s; }
+.hero-sub { animation-delay: 0.54s; }
+.hero-motto { animation-delay: 0.66s; }
+.hero-actions { animation-delay: 0.78s; }
 
 @keyframes fadeRise {
   to { opacity: 1; transform: translateY(0); }
@@ -192,7 +191,7 @@ main {
   background: var(--paper);
   color: var(--ink);
   border: 1px solid var(--paper-line);
-  box-shadow: 0 10px 28px rgba(0,0,0,.28);
+  box-shadow: 0 0 40px rgba(0,0,0,0.25), 0 10px 28px rgba(0,0,0,.28);
   padding: 60px 70px 70px;
   text-align: center;
   position: relative;
@@ -256,16 +255,8 @@ main {
   font-size: 1.08rem;
 }
 .paper-signoff {
-  margin-top: 38px;
-}
-.paper-signoff .small {
-  margin: 6px 0;
-  font-size: 1rem;
-}
-.script {
-  font-size: 2rem;
-  font-style: italic;
-  margin: 10px 0;
+  margin-top: 40px;
+  text-align: center;
 }
 .lefted {
   text-align: left;
@@ -278,6 +269,35 @@ main {
 .standard-list li {
   margin: 10px 0;
   font-size: 1.08rem;
+}
+
+/* Signature block */
+.signature-divider {
+  width: 120px;
+  height: 1px;
+  background: rgba(0,0,0,0.3);
+  margin: 30px auto 25px;
+}
+.signature-block {
+  text-align: center;
+}
+.signature-name {
+  font-size: 1.6rem;
+  letter-spacing: 0.05em;
+  margin: 0;
+}
+.signature-origin {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  letter-spacing: 0.12em;
+  color: rgba(0,0,0,0.7);
+}
+.signature-line {
+  margin-top: 14px;
+  font-size: 0.8rem;
+  letter-spacing: 0.18em;
+  color: rgba(0,0,0,0.5);
+  text-transform: uppercase;
 }
 
 @media (max-width: 700px) {
@@ -330,36 +350,13 @@ main {
   .standard-list li {
     font-size: .98rem;
   }
-  .script {
+  .signature-name {
     font-size: 1.45rem;
-  }/* SIGNATURE BLOCK */
-
-.paper-signoff {
-  margin-top: 40px;
-  text-align: center;
-}
-
-.signature-divider {
-  width: 120px;
-  height: 1px;
-  background: rgba(0,0,0,0.3);
-  margin: 30px auto 25px;
-}
-
-.signature-block {
-  text-align: center;
-}
-
-.signature-name {
-  font-size: 1.6rem;
-  letter-spacing: 0.05em;
-  margin: 0;
-}
-
-.signature-origin {
-  margin-top: 10px;
-  font-size: 0.9rem;
-  letter-spacing: 0.12em;
-  color: rgba(0,0,0,0.7);
-}
+  }
+  .signature-origin {
+    font-size: 0.82rem;
+  }
+  .signature-line {
+    font-size: 0.72rem;
+  }
 }
