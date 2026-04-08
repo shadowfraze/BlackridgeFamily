@@ -332,5 +332,34 @@ main {
   }
   .script {
     font-size: 1.45rem;
-  }
+  }/* SIGNATURE BLOCK */
+
+.paper-signoff {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.signature-divider {
+  width: 120px;
+  height: 1px;
+  background: rgba(0,0,0,0.3);
+  margin: 30px auto 25px;
+}
+
+.signature-block {
+  text-align: center;
+}
+
+.signature-name {
+  font-size: 1.6rem;
+  letter-spacing: 0.05em;
+  margin: 0;
+}
+
+.signature-origin {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  letter-spacing: 0.12em;
+  color: rgba(0,0,0,0.7);
+}
 }
