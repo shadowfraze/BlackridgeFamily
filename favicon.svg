@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <g fill="#D4AF37">
+    <!-- Sword -->
+    <rect x="246" y="80" width="20" height="280"/>
+    <polygon points="256,40 240,80 272,80"/>
+    <rect x="200" y="140" width="112" height="20"/>
+    
+    <!-- Mountains -->
+    <polygon points="80,320 200,200 260,320"/>
+    <polygon points="260,320 340,220 440,320"/>
+  </g>
+</svg>
